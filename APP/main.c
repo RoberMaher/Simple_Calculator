@@ -1,3 +1,25 @@
+/*
+ * AMIT.c
+ *
+ * Created: 9/26/2024 10:58:47 AM
+ * Author : Rober Maher
+ */ 
+
+#include <avr/io.h>
+#include "../LIB/BIT_MATH.h"
+#include "../LIB/STD_TYPE.h"
+
+#include "../MCAL/DIO/DIO_interface.h"
+
+#include "../HAL/LED/LED_interface.h"
+#include "../HAL/LCD/LCD_interface.h"
+#include "../HAL/LCD/LCD_config.h"
+#include "../HAL/KEYPAD/KEYPAD_interface.h"
+
+#define F_CPU 16000000UL
+#include <util/delay.h>
+
+
 u8 return_key(){
 	
 	u8 key=0xff ;
